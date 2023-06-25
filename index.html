@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="manifest" href="./assets/manifest.json" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <title>Vampire Survivors</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background-color: #000000;
+      }
+    </style>
+    <style media="screen">
+      @font-face {
+        font-family: fontANY;
+        src: url("./assets/fonts/ANY.ttf");
+        font-weight: 400;
+        font-weight: normal;
+      }
+      @font-face {
+        font-family: fontKO;
+        src: url("./assets/fonts/KO.ttf");
+        font-weight: 400;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="phaser-game"></div>
+    <script defer="defer">
+      const global = {};
+    </script>
+    <script defer="defer" src="./assets/js/vendors.js"></script>
+    <script defer="defer" src="./assets/js/main.js"></script>
+  </body>
+</html>

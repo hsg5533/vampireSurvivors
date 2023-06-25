@@ -40,20 +40,7 @@
   <body>
     <div id="phaser-game"></div>
     <script defer="defer">
-      const global = { anims_disabled: { type: "checkbox", value: !1 } };
-      Object.keys(global).forEach((e) => {
-        let l = document.createElement("label");
-        l.innerText = e;
-        let t = document.createElement("input");
-        (t.type = global[e].type),
-          "checkbox" == t.type &&
-            ((t.checked = global[e].value),
-            t.addEventListener("change", () => {
-              global[e].value = t.checked;
-            })),
-          l.append(t),
-          document.getElementById("settings").append(l);
-      });
+      const global = {};
     </script>
     <script defer="defer" src="./assets/js/vendors.js"></script>
     <script defer="defer" src="./assets/js/mod.js"></script>
